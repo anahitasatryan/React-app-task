@@ -1,0 +1,19 @@
+.dataPicker {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10%;
+  .input-container {
+    width: 70px;
+    width: 150px !important;
+    display: flex;
+    font-size: 0;
+    font-size: 12px !important;
+    height: 40px;
+    border: 1px solid #44c8f9 !important;
+    border-radius: 10px;
+    color: #44c8f9;
+    margin: 10px 5px 0 0;
+    margin-right: 35px;
+    align-items: center;
+  }
+}
