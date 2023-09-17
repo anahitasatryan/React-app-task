@@ -1,6 +1,6 @@
 .dataPicker-wrapper {
-align-self: center;
-padding:1% 15%;
+  align-self: center;
+  padding: 1% 15%;
   .dataPicker {
     display: flex;
     justify-content: center;
@@ -19,5 +19,8 @@ padding:1% 15%;
       margin-right: 35px;
       align-items: center;
     }
+  }
+  img {
+    align-self: center;
   }
 }

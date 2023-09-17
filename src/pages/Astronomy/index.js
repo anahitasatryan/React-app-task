@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import getTodayDate from "../../components/GetToday";
 import axios from "axios";
 import "./style.scss";
 
 const Astronomy = () => {
-  const [date, setDate] = useState("");
+  const [date, setDate] = useState(getTodayDate());
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
 

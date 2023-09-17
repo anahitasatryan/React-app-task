@@ -1,19 +1,48 @@
-.dataPicker {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 10%;
-  .input-container {
-    width: 70px;
-    width: 150px !important;
+.asteroids {
+  .dataPicker {
     display: flex;
-    font-size: 0;
-    font-size: 12px !important;
-    height: 40px;
-    border: 1px solid #44c8f9 !important;
-    border-radius: 10px;
-    color: #44c8f9;
-    margin: 10px 5px 0 0;
-    margin-right: 35px;
+    justify-content: center;
+    padding-bottom: 10%;
+    .input-container {
+      width: 70px;
+      width: 150px !important;
+      display: flex;
+      font-size: 0;
+      font-size: 12px !important;
+      height: 40px;
+      border: 1px solid #44c8f9 !important;
+      border-radius: 10px;
+      color: #44c8f9;
+      margin: 10px 5px 0 0;
+      margin-right: 35px;
+      align-items: center;
+    }
+  }
+  .table {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin-top: 3px;
+    }
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+  .error {
+    background-color: #d9534f;
+    color: #fff;
+    display: block;
+    margin: 0 auto 10px;
+    height: 100px;
+    width: 220px;
+    border-radius: 5%;
+    align-items: center;
+    padding-top: 15px;
   }
 }
