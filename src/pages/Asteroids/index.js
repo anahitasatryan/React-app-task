@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import getTodayDate from "../../components/GetToday";
+import { NASA_API_KEY } from "../../config/apiKey";
 import "./style.scss";
 
 const Asteroids = () => {
@@ -29,7 +30,7 @@ const Asteroids = () => {
     try {
       setLoading(true);
       const response = await axios.get(
-        `https://api.nasa.gov/neo/rest/v1/feed?start_date=${startDate}&end_date=${startDate}&api_key=bectL3bsjTkAbs4PA6Ldmgwf5nfgIsyVJbzn44UB`
+        `https://api.nasa.gov/neo/rest/v1/feed?start_date=${startDate}&end_date=${startDate}&api_key=${NASA_API_KEY}`
       );
       setAsteroids(response.data.near_earth_objects[startDate]);
     } catch (error) {

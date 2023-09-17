@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import getTodayDate from "../../components/GetToday";
 import axios from "axios";
+import { NASA_API_KEY } from "../../config/apiKey";
 import "./style.scss";
 
 const Astronomy = () => {
@@ -16,7 +17,7 @@ const Astronomy = () => {
     try {
       setLoading(true);
       const response = await axios.get(
-        `https://api.nasa.gov/planetary/apod?api_key=bectL3bsjTkAbs4PA6Ldmgwf5nfgIsyVJbzn44UB&date=${date}`
+        `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}&date=${date}`
       );
       setData(response.data);
     } catch (error) {
